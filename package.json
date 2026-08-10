@@ -19,18 +19,23 @@
         "build": "deno2node tsconfig.json"
     },
     "peerDependencies": {
-        "grammy": "^1.0.0"
+        "grammy": "^2.0.0-beta.6"
     },
     "devDependencies": {
-        "deno2node": "^1.3.0"
+        "deno2node": "^1.16.0",
+        "grammy": "npm:@jsr/grammyjs__grammy@2.0.0-beta.6"
     },
     "files": [
         "out/"
     ],
     "main": "out/mod.js",
-    "type": "commonjs",
+    "types": "out/mod.d.ts",
+    "type": "module",
     "exports": {
-        ".": "./out/mod.js"
+        ".": {
+            "types": "./out/mod.d.ts",
+            "default": "./out/mod.js"
+        }
     },
     "keywords": [
         "router",

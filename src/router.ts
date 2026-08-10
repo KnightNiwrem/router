@@ -69,7 +69,10 @@ export class Router<C extends Context> implements MiddlewareObj<C> {
      * @param route The route for which to register the middleware
      * @param middleware The middleware to register
      */
-    route(route: PropertyKey, ...middleware: Array<Middleware<C>>) {
+    route(
+        route: PropertyKey,
+        ...middleware: Array<Middleware<C>>
+    ): Composer<C> {
         const composer = new Composer(...middleware);
         this.routeHandlers[route] = composer;
         return composer;
@@ -83,7 +86,7 @@ export class Router<C extends Context> implements MiddlewareObj<C> {
      *
      * @param middleware Middleware to run if no route matches
      */
-    otherwise(...middleware: Array<Middleware<C>>) {
+    otherwise(...middleware: Array<Middleware<C>>): Composer<C> {
         return this.otherwiseHandler = new Composer(...middleware);
     }
 
