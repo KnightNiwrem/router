@@ -1,4 +1,4 @@
-import type { Context, Middleware } from "../src/deps.deno.ts";
+import type { Context, Middleware } from "../src/deps.ts";
 import { Router } from "../src/router.ts";
 import { assertEquals } from "./deps.test.ts";
 
