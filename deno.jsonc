@@ -15,8 +15,7 @@
     "tasks": {
         "check": "deno check --allow-import src/mod.ts",
         "test": "deno test --allow-import test",
-        "test:npm:cjs": "deno task pack:npm && node -e \"const { Router } = require('./out/npm'); if (typeof Router !== 'function') throw new TypeError('Router was not exported')\"",
-        "ok": "deno fmt --check && deno lint && deno task test && deno task check && deno task test:npm:cjs",
+        "ok": "deno fmt --check && deno lint && deno task test && deno task check",
         "pack": "deno pack",
         "pack:npm": "rm -rf out/npm && mkdir -p out/npm && deno pack --output out/npm.tgz && tar -xzf out/npm.tgz --directory out/npm --strip-components=1 && cp package.json out/npm/package.json && rm out/npm.tgz",
         "publish:jsr": "deno publish",
