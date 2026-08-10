@@ -5,7 +5,7 @@
     "author": "KnorpelSenf",
     "license": "MIT",
     "engines": {
-        "node": "^12.20.0 || >=14.13.1"
+        "node": ">=24.0.0"
     },
     "homepage": "https://grammy.dev/plugins/router.html",
     "repository": {
@@ -28,6 +28,7 @@
         ".": {
             "types": "./src/mod.d.ts",
             "import": "./src/mod.js",
+            "require": "./src/mod.js",
             "default": "./src/mod.js"
         }
     },
