@@ -1,10 +1,10 @@
-import {
-    Composer,
+import { Composer } from "./deps.ts";
+import type {
     Context,
     Middleware,
     MiddlewareFn,
     MiddlewareObj,
-} from "./deps.deno.ts";
+} from "./deps.ts";
 
 type MaybePromise<T> = T | Promise<T>;
 

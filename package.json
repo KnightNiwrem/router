@@ -15,26 +15,20 @@
     "bugs": {
         "url": "https://github.com/grammyjs/router/issues"
     },
-    "scripts": {
-        "build": "deno2node tsconfig.json"
-    },
     "peerDependencies": {
-        "grammy": "^2.0.0-beta.6"
-    },
-    "devDependencies": {
-        "deno2node": "^1.16.0",
-        "grammy": "npm:@jsr/grammyjs__grammy@2.0.0-beta.6"
+        "@jsr/grammyjs__grammy": "^2.0.0-beta.6"
     },
     "files": [
-        "out/"
+        "src/"
     ],
-    "main": "out/mod.js",
-    "types": "out/mod.d.ts",
+    "main": "./src/mod.js",
+    "types": "./src/mod.d.ts",
     "type": "module",
     "exports": {
         ".": {
-            "types": "./out/mod.d.ts",
-            "default": "./out/mod.js"
+            "types": "./src/mod.d.ts",
+            "import": "./src/mod.js",
+            "default": "./src/mod.js"
         }
     },
     "keywords": [
