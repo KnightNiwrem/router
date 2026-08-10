@@ -1,1 +1,1 @@
-export * from "https://lib.deno.dev/x/grammy@v1/mod.ts";
+export * from "jsr:@grammyjs/grammy@^2.0.0-beta.6";

@@ -1,4 +1,11 @@
 {
+    "nodeModulesDir": "none",
+    "lock": false,
+    "tasks": {
+        "check": "deno cache --allow-import --check=all src/mod.ts",
+        "test": "deno test --allow-import test",
+        "ok": "deno fmt --check && deno lint && deno task test && deno task check"
+    },
     "fmt": {
         "indentWidth": 4,
         "proseWrap": "preserve",
@@ -14,5 +21,10 @@
             "./out/",
             "./package-lock.json"
         ]
-    }
+    },
+    "exclude": [
+        "./node_modules/",
+        "./out/",
+        "./package-lock.json"
+    ]
 }
