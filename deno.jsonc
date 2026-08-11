@@ -2,6 +2,9 @@
     "name": "@grammyjs/router",
     "version": "2.0.0",
     "exports": "./src/mod.ts",
+    "imports": {
+        "@grammyjs/grammy": "jsr:@grammyjs/grammy@^2.0.0-beta.6"
+    },
     "license": "MIT",
     "publish": {
         "include": [

@@ -16,7 +16,7 @@
         "url": "https://github.com/grammyjs/router/issues"
     },
     "peerDependencies": {
-        "@jsr/grammyjs__grammy": "^2.0.0-beta.6"
+        "@grammyjs/grammy": "npm:@jsr/grammyjs__grammy@^2.0.0-beta.6"
     },
     "files": [
         "src/"
