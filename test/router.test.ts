@@ -1,6 +1,6 @@
-import type { Context, Middleware } from "../src/deps.ts";
+import type { Context, Middleware } from "@grammyjs/grammy";
+import { assertEquals } from "@std/assert";
 import { Router } from "../src/router.ts";
-import { assertEquals } from "./deps.test.ts";
 
 type TestContext = Context & {
     log: string[];

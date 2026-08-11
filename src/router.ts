@@ -1,10 +1,10 @@
-import { Composer } from "./deps.ts";
+import { Composer } from "@grammyjs/grammy";
 import type {
     Context,
     Middleware,
     MiddlewareFn,
     MiddlewareObj,
-} from "./deps.ts";
+} from "@grammyjs/grammy";
 
 type MaybePromise<T> = T | Promise<T>;
 
